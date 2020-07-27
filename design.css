@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Quicksand', 'Noto Sans TC', sans-serif;
 }
 
 p {
@@ -8,13 +8,61 @@ p {
   margin: 6px;
 }
 
+h3 {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.main-panel {
+  display: flex;
+  width: 800px;
+  margin: 40px auto;
+  justify-content: space-around;
+  flex-grow:
+}
+
 .main-box {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 500px;
-  height: 400px;
+}
+
+.control-panel {
+  margin-top: 26px;
+  height: 100%;
+  width: 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-option-box {
+  width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   margin: 40px auto;
+}
+
+.option-box {
+  text-align: center;
+  box-sizing: border-box;
+  width: 200px;
+  height: 125px;
+  margin: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #C8E6C9;
+}
+
+.option-box p {
+  color: #F44336;
+  font-size: 14px;
+  margin: 1px 6px;
 }
 
 .search-box {
@@ -36,8 +84,8 @@ p {
 
 .search-button {
   font-size: 20px;
-  font-family: 'Quicksand', sans-serif;
-  background-color: #4CAF50;
+  font-family: 'Quicksand', 'Noto Sans TC', sans-serif;
+  background-color: #2196F3;
   border: none;
   color: white;
   padding: 12px 26px;
@@ -45,4 +93,47 @@ p {
   margin: 2px 2px;
   cursor: pointer;
   border-radius: 5px;
+}
+
+.control-button {
+  font-size: 20px;
+  width: 250px;
+  font-family: 'Quicksand', 'Noto Sans TC', sans-serif;
+  background-color: #2196F3;
+  border: none;
+  color: white;
+  padding: 12px 26px;
+  text-decoration: none;
+  margin: 2px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.control-button:hover {
+  background-color: #64B5F6;
+  color: #34495e;
+  transition: 0.3s;
+}
+
+.search-button:hover {
+  background-color: #64B5F6;
+  color: #34495e;
+  transition: 0.3s;
+}
+
+.option-button {
+  font-size: 20px;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 18px 26px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.option-button:hover {
+  background-color: #81C784;
+  color: #34495e;
+  transition: 0.3s;
 }

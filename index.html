@@ -2,16 +2,97 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>search tool</title>
     <link rel="stylesheet" href="design.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
     <script type="text/javascript" src="script.js" async></script>
   </head>
   <body>
-    <div class="main-box">
-      <p>input your item name</p>
-      <input type="text" value="" id="searchInput" class="search-box">
-      <button type="button" onclick="startSearch()" name="button" id="getSearch" class="search-button">Go</button>
+    <div class="main-panel">
+      <div class="control-panel">
+
+      </div>
+      <div class="main-box">
+        <p>input your item name</p>
+        <input type="text" value="" id="searchInput" class="search-box">
+        <button type="button" onclick="startSearch()" name="button" id="getSearch" class="search-button">Go</button>
+      </div>
+
+      <div class="control-panel">
+        <button type="button" name="button" class="control-button" onclick="selectOnlySearch()">只選有搜尋功能的</button>
+        <button type="button" name="button" class="control-button" onclick="selectOnlyNoSearch()">只選沒有搜尋功能的</button>
+      </div>
+    </div>
+
+    <div class="search-option-box">
+      <div class="option-box">
+        <h3>HKTV mall</h3>
+        <button type="button" onclick="switchOption('0')" name="button" id="0" class="option-button">Enable</button>
+      </div>
+      <div class="option-box">
+        <h3>百佳</h3>
+        <button type="button" onclick="switchOption('1')" name="button" id="1" class="option-button">Enable</button>
+      </div>
+      <div class="option-box">
+        <h3>ztore</h3>
+        <button type="button" onclick="switchOption('2')" name="button" id="2" class="option-button">Enable</button>
+      </div>
+      <div class="option-box">
+        <h3>watsons</h3>
+        <button type="button" onclick="switchOption('3')" name="button" id="3" class="option-button">Enable</button>
+      </div>
+      <div class="option-box">
+        <h3>OMAKASE TOY</h3>
+        <button type="button" onclick="switchOption('4')" name="button" id="4" class="option-button">Enable</button>
+      </div>
+      <div class="option-box">
+        <h3>18gifts</h3>
+        <button type="button" onclick="switchOption('5')" name="button" id="5" class="option-button">Enable</button>
+      </div>
+      <div class="option-box">
+        <h3>SampsonStore</h3>
+        <button type="button" onclick="switchOption('6')" name="button" id="6" class="option-button">Enable</button>
+      </div>
+      <div class="option-box">
+        <h3>take toys</h3>
+        <button type="button" onclick="switchOption('7')" name="button" id="7" class="option-button">Enable</button>
+      </div>
+      <div class="option-box">
+        <h3>18DSC</h3>
+        <button type="button" onclick="switchOption('8')" name="button" id="8" class="option-button">Enable</button>
+      </div>
+      <div class="option-box">
+        <h3>晴趣屋</h3>
+        <button type="button" onclick="switchOption('9')" name="button" id="9" class="option-button">Enable</button>
+      </div>
+      <div class="option-box">
+        <h3>LEXY</h3>
+        <button type="button" onclick="switchOption('10')" name="button" id="10" class="option-button">Enable</button>
+      </div>
+      <div class="option-box">
+        <h3>highlights</h3>
+        <button type="button" onclick="switchOption('11')" name="button" id="11" class="option-button">Enable</button>
+      </div>
+      <div class="option-box">
+        <h3>ohyagroups</h3>
+        <button type="button" onclick="switchOption('12')" name="button" id="12" class="option-button">Enable</button>
+      </div>
+      <div class="option-box">
+        <h3>TENGA網上商店</h3>
+        <p>*該網站沒有搜尋功能</p>
+        <button type="button" onclick="switchOption('13')" name="button" id="13" class="option-button">Enable</button>
+      </div>
+      <div class="option-box">
+        <h3>cupidotoy</h3>
+        <p>*該網站沒有搜尋功能</p>
+        <button type="button" onclick="switchOption('14')" name="button" id="14" class="option-button">Enable</button>
+      </div>
+      <div class="option-box">
+        <h3>durex網上商店</h3>
+        <p>*不建議用搜尋功能</p>
+        <button type="button" onclick="switchOption('15')" name="button" id="15" class="option-button">Enable</button>
+      </div>
     </div>
   </body>
 
