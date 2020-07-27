@@ -39,6 +39,18 @@ const switchOptionFalse = siteId => {
     isSearch[siteId] = false;
 }
 
+const selectAll = () => {
+  for (i=0; i<30; i++) {
+    switchOptionTrue(i);
+  }
+}
+
+const clearAll = () => {
+  for (i=0; i<30; i++) {
+    switchOptionFalse(i)
+  }
+}
+
 const selectOnlySearch = () => {
   for (i=0; i<13; i++) {
     switchOptionTrue(i);
