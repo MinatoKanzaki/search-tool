@@ -47,7 +47,7 @@ const selectAll = () => {
 
 const clearAll = () => {
   for (i=0; i<30; i++) {
-    switchOptionFalse(i)
+    switchOptionFalse(i);
   }
 }
 
@@ -117,7 +117,7 @@ const startSearch = () => {
     window.open(`http://cupidotoy.com/`);
   }
   if (isSearch[15]) {
-    window.open(`https://www.durex-shopline.com/products`);
+    window.open(`https://www.durex-shopline.com/products?query=${searchWord}`);
   }
 
 
