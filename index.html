@@ -9,6 +9,10 @@
     <script type="text/javascript" src="script.js" async></script>
   </head>
   <body>
+    <div class="new-bar" id="new-bar">
+      <p>*新增 Naughty Toys</p>
+      <button type="button" name="button" class="top-button" onclick="closeTopBar()">ok</button>
+    </div>
     <div class="main-panel">
       <div class="control-panel">
         <button type="button" name="button" class="control-button" onclick="selectAll()">全選</button>
@@ -93,6 +97,11 @@
         <h3>durex網上商店</h3>
         <p>*不建議用搜尋功能</p>
         <button type="button" onclick="switchOption('15')" name="button" id="15" class="option-button">Enable</button>
+      </div>
+      <div class="option-box">
+        <h3>Naughty Toys</h3>
+        <p><span class="new">*New</span></p>
+        <button type="button" onclick="switchOption('16')" name="button" id="16" class="option-button">Enable</button>
       </div>
     </div>
   </body>

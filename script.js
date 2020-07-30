@@ -55,6 +55,7 @@ const selectOnlySearch = () => {
   for (i=0; i<13; i++) {
     switchOptionTrue(i);
   }
+  switchOptionTrue(16);
   switchOptionFalse(13);
   switchOptionFalse(14);
   switchOptionFalse(15);
@@ -64,6 +65,7 @@ const selectOnlyNoSearch = () => {
   for (i=0; i<13; i++) {
     switchOptionFalse(i);
   }
+  switchOptionFalse(16);
   switchOptionTrue(13);
   switchOptionTrue(14);
   switchOptionTrue(15);
@@ -119,19 +121,11 @@ const startSearch = () => {
   if (isSearch[15]) {
     window.open(`https://www.durex-shopline.com/products?query=${searchWord}`);
   }
+  if (isSearch[16]) {
+    window.open(`https://naughtytoys.com.hk/search.php?s=${searchWord}`);
+  }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+const closeTopBar = () => {
+  document.getElementById('new-bar').style.display = 'none';
 }
